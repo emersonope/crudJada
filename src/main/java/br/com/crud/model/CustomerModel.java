@@ -14,9 +14,6 @@ import javax.validation.constraints.NotNull;
 public class CustomerModel {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
     @CPF
     @NotBlank
     private String cpf;
@@ -26,6 +23,6 @@ public class CustomerModel {
     private String nome;
 
     @NotNull
-    private Long telefone;
+    private String telefone;
 
 }
